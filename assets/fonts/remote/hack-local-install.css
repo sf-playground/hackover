@@ -1,0 +1,10 @@
+/*!
+ *  Hack - https://sourcefoundry.org/hack/
+ *  Licenses - Fonts: Hack Open Font License + Bitstream Vera license, CSS: MIT License
+ */
+@font-face {
+  font-family: 'Hack local install';
+  src: local('Hack');
+  font-weight: 400;
+  font-style: normal;
+}
