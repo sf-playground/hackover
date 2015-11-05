@@ -1,0 +1,10 @@
+/*!
+ *  Hack - https://sourcefoundry.org/hack/
+ *  Licenses - Fonts: Hack Open Font License + Bitstream Vera license, CSS: MIT License
+ */
+@font-face {
+  font-family: 'Hack';
+  src: url('https://cdn.jsdelivr.net/font-hack/latest/fonts/woff2/hack-regular-webfont.woff2?v=latest') format('woff2'),url('https://cdn.jsdelivr.net/font-hack/latest/fonts/woff/hack-regular-webfont.woff?v=latest') format('woff'), url('https://cdn.jsdelivr.net/font-hack/latest/fonts/web-ttf/hack-regular-webfont.ttf?v=latest') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

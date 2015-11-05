@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Hackover</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/hackover.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Hackover</h1>
+        <p>Get visual insight into the differences of two fonts</p>
+      </div>
+    </header>
+
+    <form>
+      <aside>
+        <div class="wrapper">
+          <div class="styled-select subset">
+            <span></span>
+            <select id="subset" size="1">
+              <option>ASCII</option>
+              <option>MES-1</option>
+              <option>MES-2</option>
+            </select>
+          </div>
+          <div class="styled-select view">
+            <span></span>
+            <select id="view" size="1">
+              <!--<option>Table</option>-->
+              <option>Details</option>
+              <option>Zoom</option>
+            </select>
+          </div>
+          <div class="styled-select yoffset">
+            <span></span>
+            <select id="yoffset" size="1">
+              <option value="-20">Y Offset: -20</option>
+              <option value="-15">Y Offset: -15</option>
+              <option value="-10">Y Offset: -10</option>
+              <option value="-5">Y Offset: -5</option>
+              <option value="0" selected>Y Offset: 0</option>
+              <option value="5">Y Offset: 5</option>
+              <option value="10">Y Offset: 10</option>
+              <option value="15">Y Offset: 15</option>
+              <option value="20">Y Offset: 20</option>
+            </select>
+          </div>
+          <div class="styled-select layer1">
+            <span></span>
+            <select id="layer1" size="1">
+            </select>
+          </div>
+          <div class="styled-select layer2">
+            <span></span>
+            <select id="layer2" size="1">
+            </select>
+          </div>
+        </div>
+      </aside>
+
+      <ul id="grid">
+      </ul>
+    </form>
+
+
+    <footer>
+      <div>0.1.0-dev</div>
+      <div>Created by the Source Foundry, licensed under MIT.</div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script src="assets/js/hackover.js"></script>
+  </body>
+</html>
