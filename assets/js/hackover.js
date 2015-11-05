@@ -156,6 +156,7 @@ jQuery(document).ready(function () {
           $option = $options.eq(j);
           if ($option.text() > face) {
             $option_new.insertBefore($option);
+            break;
           }
         }
         if (j === $options.length) {
