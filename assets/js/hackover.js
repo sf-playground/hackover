@@ -243,7 +243,7 @@ jQuery(document).ready(function () {
     $(this).parent().find('span').text(subset);
     $('#grid').empty();
     buildGrid();
-    $('#yoffset, #layer1, #layer2').trigger('change');
+    $('#opacity, #yoffset, #layer1, #layer2').trigger('change');
   })
   .trigger('change');
   $('#view').change(function (ev) {
@@ -254,6 +254,13 @@ jQuery(document).ready(function () {
       .removeClass('view-Details')
       .removeClass('view-Zoom')
       .addClass('view-' + view);
+  })
+  .trigger('change');
+  $('#opacity').change(function (ev) {
+    var opacity = $(this).val(),
+      opacityDisplay = $(this).find('option:selected').text();
+    $(this).parent().find('span').text(opacityDisplay);
+    $('span.layer2').css('opacity', opacity);
   })
   .trigger('change');
   $('#yoffset').change(function (ev) {
@@ -269,7 +276,7 @@ jQuery(document).ready(function () {
       return;
     }
     $(this).parent().find('span').text(face);
-    $('.' + $(this).attr('id')).css('fontFamily', face);
+    $('span.' + $(this).attr('id')).css('fontFamily', face);
   })
   .trigger('change');
 });
