@@ -278,5 +278,12 @@ jQuery(document).ready(function () {
     $(this).parent().find('span').text(face);
     $('span.' + $(this).attr('id')).css('fontFamily', face);
   })
-  .trigger('change');
+    .trigger('change');
+  $(window).scroll(function () {
+    $('html').toggleClass(
+      'toolbar-fixed',
+      $(window).scrollTop() > $('header').outerHeight()
+    );
+  })
+    .trigger('scroll');
 });
