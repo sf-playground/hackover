@@ -1,7 +1,7 @@
 hackover - changelog
 ====================
 
-0.3.0 (not yet released)
+0.2.1 (2015-11-07)
 + Position toolbar fixed when scrolling down
 + Position glyphs on top of their Unicode points
 - Fix wrong README
