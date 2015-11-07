@@ -267,7 +267,13 @@ jQuery(document).ready(function () {
     var offset = $(this).val(),
       offsetDisplay = $(this).find('option:selected').text();
     $(this).parent().find('span').text(offsetDisplay);
-    $('span.layer2').css('marginTop', offset + 'px');
+    $('span.layer1, span.layer2').css('marginTop', 0);
+    $('#grid li').css('padding-bottom', Math.abs(offset) + 'px');
+    if (offset > 0) {
+      $('span.layer2').css('marginTop', offset + 'px');
+    } else {
+      $('span.layer1').css('marginTop', (-offset) + 'px');
+    }
   })
   .trigger('change');
   $('#layer1, #layer2').change(function (ev) {
