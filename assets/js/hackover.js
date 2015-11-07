@@ -284,5 +284,6 @@ jQuery(document).ready(function () {
       'toolbar-fixed',
       $(window).scrollTop() > $('header').outerHeight()
     );
-  });
+  })
+    .trigger('scroll');
 });
