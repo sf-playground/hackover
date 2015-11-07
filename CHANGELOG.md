@@ -1,10 +1,13 @@
 hackover - changelog
 ====================
 
+0.2.2 (2015-11-07)
+- Wrong Y offset overlay
+
 0.2.1 (2015-11-07)
 + Position toolbar fixed when scrolling down
 + Position glyphs on top of their Unicode points
-- Fix wrong README
+- Wrong README
 
 0.2.0 (2015-11-05)
 + Add opacity control
