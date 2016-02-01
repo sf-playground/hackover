@@ -11,3 +11,5 @@ Summary
 -------
 
 Use hackover to visually analyse how glyphs differ between various fonts.
+
+Live at <https://sf-playground.github.io/hackover>
